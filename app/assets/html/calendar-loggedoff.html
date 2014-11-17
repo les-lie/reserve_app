@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Volunteer Application</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+  <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <script type="text/javascript" src="jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="jquery.leanModal.min.js"></script>
+
+</head>
+
+<body>
+
+<header class="clearfix">
+	<img class="logo" src="http://placekitten.com/g/50/50">
+	<ul class="login">
+    <li><a class="btn" href="signup.html">Sign Up</a></li>
+    <li><a id="modal_trigger" class="btn" href="#modal">Log In</a></li>
+  </ul>
+</header>
+
+
+<!-- Login Modal Begin -->
+<script>
+  $("#modal_trigger").leanModal({top : 200, overlay : .6, closeButton: ".modal_close" });
+</script>
+
+<div id="modal" class="modal-login" style="display:none;">
+  <header class="clearfix">
+  <h1>Login</h1>
+  <a class="modal_close"><i class="fa fa-times"></i></a>
+  </header>
+
+  <form>
+    <fieldset>
+      <label> <input type="text" placeholder="Username"></label>
+      <label> <input type="password" placeholder="Password"></label>
+    </fieldset>
+    <a class="btn" href="calendar-loggedon.html">Log In</a>
+  </form>
+
+  <p>Not a member?</p>
+  <p><a href="signin.html">Sign Up</a></p>
+</div>
+<!-- Login Modal End -->
+
+<nav class="month">
+<h1>Volunteer Calendar</h1>
+<h2>2014</h2>
+<ul>
+  <li><a class="btn" href="#" alt="Back"><</a></li>
+  <li>November</li>
+  <li><a class="btn" href="#" alt="Next">></a></li>
+</ul>
+</nav>
+
+<nav class="container">
+<table class="calendar">
+<thead>
+<tr>
+  <th>Sunday</th>
+  <th>Monday</th>
+  <th>Tuesday</th>
+  <th>Wednesday</th>
+  <th>Thursday</th>
+  <th>Friday</th>
+  <th>Saturday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="past">
+  	<h3>27</h3>
+  	<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Food Delivery</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>5:00 PM</h4>
+  			<p>Senior Citizens Night</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>6:00 PM</h4>
+  			<p>Serve Dinner</p>
+  			</a>
+  		</li>
+  	</ul>
+  </td>
+  <td class="past">
+  	<h3>28</h3>
+  	<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Food Delivery</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>5:00 PM</h4>
+  			<p>Senior Night</p>
+  			</a>
+  		</li>
+  	</ul>
+  </td>
+  <td class="past">
+  	<h3>29</h3>
+  	<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Food Delivery</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>5:00 PM</h4>
+  			<p>Senior Night</p>
+  			</a>
+  		</li>
+  	</ul>
+  </td>
+  <td class="past">
+  	<h3>30</h3>
+  </td>
+  <td class="past">
+  	<h3>31</h3>
+  	<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Good Dog Walk Park</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>5:00 PM</h4>
+  			<p>Senior Night</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>6:00 PM</h4>
+  			<p>Serve or Be Served</p>
+  			</a>
+  		</li>
+  	</ul>
+  </td>
+  <td class="past">
+  	<h3>01</h3>
+  	<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Food Delivery</p>
+  			</a>
+  		</li>
+  	</ul>
+  </td>
+  <td>
+  	<h3>02</h3>
+  	<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Peaces of Bacon</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>5:00 PM</h4>
+  			<p>Senior Delight</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>6:00 PM</h4>
+  			<p>Be Dinner</p>
+  			</a>
+  		</li>
+  	</ul>
+  </td>
+</tr>
+<tr>
+	<td>
+		<h3>03</h3>
+	</td>
+	<td>
+		<h3>04</h3>
+		<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Clothing Delivery</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>5:00 PM</h4>
+  			<p>Saturday Night Live Screening</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>6:00 PM</h4>
+  			<p>Serve Dinner</p>
+  			</a>
+  		</li>
+  		</ul>
+	</td>
+	<td>
+		<h3>05</h3>
+		<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Food Drive</p>
+  			</a>
+  		</li>
+  		</ul>
+	</td>
+	<td>
+		<h3>06</h3>
+		<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Food Delivery</p>
+  			</a>
+  		</li>
+  	</ul>
+	</td>
+	<td>
+		<h3>07</h3>
+	</td>
+	<td>
+		<h3>08</h3>
+		<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Food Delivery</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>5:00 PM</h4>
+  			<p>Senior Bacon Night</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>6:00 PM</h4>
+  			<p>Serve Delicious Dinner</p>
+  			</a>
+  		</li>
+  	</ul>
+	</td>
+	<td>
+		<h3>09</h3>
+		<ul>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>10:00 AM</h4>
+  			<p>Rushed Food Delivery</p>
+  			</a>
+  		</li>
+  		<li>
+  			<a href="eventdetails-loggedout.html">
+  			<h4>5:00 PM</h4>
+  			<p>Senior Bingo Night</p>
+  			</a>
+  		</li>
+  	</ul>
+	</td>
+</tr>
+<tr>
+  <td>
+    <h3>10</h3>
+  </td>
+  <td>
+    <h3>11</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Clothing Delivery</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>5:00 PM</h4>
+        <p>Saturday Night Live Screening</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>6:00 PM</h4>
+        <p>Serve Dinner</p>
+        </a>
+      </li>
+      </ul>
+  </td>
+  <td>
+    <h3>12</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Food Drive</p>
+        </a>
+      </li>
+      </ul>
+  </td>
+  <td>
+    <h3>13</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Food Delivery</p>
+        </a>
+      </li>
+    </ul>
+  </td>
+  <td>
+    <h3>14</h3>
+  </td>
+  <td>
+    <h3>15</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Food Delivery</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>5:00 PM</h4>
+        <p>Senior Bacon Night</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>6:00 PM</h4>
+        <p>Serve Delicious Dinner</p>
+        </a>
+      </li>
+    </ul>
+  </td>
+  <td>
+    <h3>16</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Rushed Food Delivery</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>5:00 PM</h4>
+        <p>Senior Bingo Night</p>
+        </a>
+      </li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>
+    <h3>17</h3>
+  </td>
+  <td>
+    <h3>18</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Clothing Delivery</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>5:00 PM</h4>
+        <p>Saturday Night Live Screening</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>6:00 PM</h4>
+        <p>Serve Dinner</p>
+        </a>
+      </li>
+      </ul>
+  </td>
+  <td>
+    <h3>19</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Food Drive</p>
+        </a>
+      </li>
+      </ul>
+  </td>
+  <td>
+    <h3>20</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Food Delivery</p>
+        </a>
+      </li>
+    </ul>
+  </td>
+  <td>
+    <h3>21</h3>
+  </td>
+  <td>
+    <h3>22</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Food Delivery</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>5:00 PM</h4>
+        <p>Senior Bacon Night</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>6:00 PM</h4>
+        <p>Serve Delicious Dinner</p>
+        </a>
+      </li>
+    </ul>
+  </td>
+  <td>
+    <h3>23</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Rushed Food Delivery</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>5:00 PM</h4>
+        <p>Senior Bingo Night</p>
+        </a>
+      </li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td>
+    <h3>24</h3>
+  </td>
+  <td>
+    <h3>25</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Clothing Delivery</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>5:00 PM</h4>
+        <p>Saturday Night Live Screening</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>6:00 PM</h4>
+        <p>Serve Dinner</p>
+        </a>
+      </li>
+      </ul>
+  </td>
+  <td>
+    <h3>26</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Food Drive</p>
+        </a>
+      </li>
+      </ul>
+  </td>
+  <td>
+    <h3>27</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Food Delivery</p>
+        </a>
+      </li>
+    </ul>
+  </td>
+  <td>
+    <h3>28</h3>
+  </td>
+  <td>
+    <h3>29</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Food Delivery</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>5:00 PM</h4>
+        <p>Senior Bacon Night</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>6:00 PM</h4>
+        <p>Serve Delicious Dinner</p>
+        </a>
+      </li>
+    </ul>
+  </td>
+  <td>
+    <h3>30</h3>
+    <ul>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>10:00 AM</h4>
+        <p>Rushed Food Delivery</p>
+        </a>
+      </li>
+      <li>
+        <a href="eventdetails-loggedout.html">
+        <h4>5:00 PM</h4>
+        <p>Senior Bingo Night</p>
+        </a>
+      </li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+
+</html>
