@@ -12,6 +12,8 @@ body {
 	max-width:960px;
 }
 
+a {text-decoration:none;}
+
 header {
 	padding:1rem;
 }
@@ -254,7 +256,7 @@ table.calendar {
 		.modal-volunteerconf form a,
 		.modal-confirmreg a {
 			display:block;
-			width:3rem;
+			width:3.5rem;
 			margin:.5rem auto;
 			padding:.5rem;
 		}
