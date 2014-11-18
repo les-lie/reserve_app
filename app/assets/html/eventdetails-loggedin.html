@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Volunteer Application</title>
+
+  <!--STYLES-->
+	<link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+  
+  <!--SCRIPTS-->
+  <script type="text/javascript" src="../javascripts/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="../javascripts/jquery.leanModal.min.js"></script>
+
+</head>
+
+<body>
+
+<header class="clearfix">
+  <img class="logo" src="http://placekitten.com/g/50/50">
+  <ul class="account">
+    <li>Welcome, Leslie</li>
+    <li><a href="eventdetails-loggedout.html">Sign Out</a></li>
+  </ul>
+</header>
+
+<section class="eventdetails">
+  <h1>Food Delivery</h1>
+  <figure>
+    <img src="http://placekitten.com/g/400/230">
+  </figure>
+  <h2>Contact Person</h2>
+  <p>Aimee Franco</p>
+  <h2>Event Description</h2>
+  <p>Volunteers will pick up packages of food from the food bank depository and deliver it to various locations around the city. Locations include soup kitchens, shelters, etc.</p>
+  <h2>Event Requirements</h2>
+  <ul>
+    <li>Must be over 18 years old</li>
+    <li>Must have a valid driver's license</li>
+    <li>Must have your own vehicle</li>
+    <li>Must be able to lift at least 15 lbs comfortably</li>
+  </ul>
+  <h2>Location</h2>
+  <p>1600 S. Wacker Drive<br>
+  Chicago, IL 60655</p>
+  <h2>Time</h2>
+  <p>10:00AM - 12:00PM</p>
+  <h2>Number of Volunteers Needed</h2>
+  <p>5</p>
+  <a id="modal_trigger" class="btn" href="#modal">Volunteer</a>
+</section>
+
+<!-- Volunteer Confirmation Modal Begin -->
+<script>
+  $("#modal_trigger").leanModal({top : 200, overlay : .6, closeButton: ".modal_close" });
+</script>
+<script>
+function 
+  
+</script>
+
+<div id="modal" class="modal-volunteerconf" style="display:none;">
+  <header class="clearfix">
+  <h1>Confirm Requirements</h1>
+  <a class="modal_close"><i class="fa fa-times"></i></a>
+  </header>
+  <form>
+    <fieldset>
+      <label> 
+        <input type="checkbox" required> I am at least 18 years old.</label>
+      <label> 
+        <input type="checkbox" required> I have a valid driver's license.
+      </label>
+      <label>
+        <input type="checkbox" required> I have my own vehicle.
+      </label>
+      <label>
+        <input type="checkbox" required> I am able to lift at least 15 lbs.
+      </label>
+    </fieldset>
+    <a class="btn" href="volunteer-confirmation.html">I meet the qualifications.</a>
+  </form>
+  <p><a class="modal_close" href="#">Cancel</a></p>
+</div>
+<!-- Volunteer Confirmation Modal End -->
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Volunteer Application</title>
+
+  <!--STYLES-->
+	<link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+  
+  <!--SCRIPTS-->
+  <script type="text/javascript" src="../javascripts/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="../javascripts/jquery.leanModal.min.js"></script>
+
+</head>
+
+<body>
+
+<header class="clearfix">
+  <img class="logo" src="http://placekitten.com/g/50/50">
+  <ul class="login">
+    <li><a class="btn" href="signup.html">Sign Up</a></li>
+    <li><a id="modal_trigger" class="btn" href="#modal">Log In</a></li>
+  </ul>
+</header>
+
+<!-- Volunteer Confirmation Modal Begin -->
+<script>
+  $("#modal_trigger").leanModal({top : 200, overlay : .6, closeButton: ".modal_close" });
+</script>
+
+<div id="modal" class="modal-volunteerconf" style="display:none;">
+  <header class="clearfix">
+  <h1>Log In</h1>
+  <a class="modal_close"><i class="fa fa-times"></i></a>
+  </header>
+
+  <form>
+    <fieldset>
+      <label> <input type="text" placeholder="Username"></label>
+      <label> <input type="password" placeholder="Password"></label>
+    </fieldset>
+    <a class="btn" href="eventdetails-loggedin.html">Log In</a>
+  </form>
+
+  <p>Not a member?</p>
+  <p><a href="signin.html">Sign Up</a></p>
+</div>
+<!-- Volunteer Confirmation Modal End -->
+
+<section class="eventdetails">
+  <h1>Food Delivery</h1>
+  <figure>
+    <img src="http://placekitten.com/g/400/230">
+  </figure>
+  <h2>Contact Person</h2>
+  <p>Aimee Franco</p>
+  <h2>Event Description</h2>
+  <p>Volunteers will pick up packages of food from the food bank depository and deliver it to various locations around the city. Locations include soup kitchens, shelters, etc.</p>
+  <h2>Event Requirements</h2>
+  <ul>
+    <li>Must be over 18 years old</li>
+    <li>Must have a valid driver's license</li>
+    <li>Must have your own vehicle</li>
+    <li>Must be able to lift at least 15 lbs comfortably</li>
+  </ul>
+  <h2>Location</h2>
+  <p>1600 S. Wacker Drive<br>
+  Chicago, IL 60655</p>
+  <h2>Time</h2>
+  <p>10:00AM - 12:00PM</p>
+  <h2>Number of Volunteers Needed</h2>
+  <p>5</p>
+  <a id="modal_trigger1" class="btn" href="#modal1">Volunteer</a>
+</section>
+
+<!-- Volunteer Confirmation Modal Begin -->
+<script>
+  $("#modal_trigger1").leanModal({top : 200, overlay : .6, closeButton: ".modal_close" });
+</script>
+
+<div id="modal1" class="modal-volunteerconf" style="display:none;">
+  <header class="clearfix">
+  <h1>Log In</h1>
+  <a class="modal_close"><i class="fa fa-times"></i></a>
+  </header>
+
+  <p>You must log in or sign up to volunteer.</p>
+
+  <form>
+    <fieldset>
+      <label> <input type="text" placeholder="Username"></label>
+      <label> <input type="password" placeholder="Password"></label>
+    </fieldset>
+    <a class="btn" href="eventdetails-loggedin.html">Log In</a>
+  </form>
+
+  <p>Not a member?</p>
+  <p><a href="signin.html">Sign Up</a></p>
+</div>
+<!-- Volunteer Confirmation Modal End -->
+
+</body>
+
+</html>

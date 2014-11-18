@@ -1,0 +1,305 @@
+html {
+	background:#eee;
+	box-sizing:border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	font-family:sans-serif;
+	font-size:14px;
+	margin:0 auto;
+	max-width:960px;
+}
+
+a {text-decoration:none;}
+
+header {
+	padding:1rem;
+}
+img.logo {
+	border:2px solid #000;
+	float:left;
+}
+
+.btn {
+	background:#fff;
+	border:2px solid #000;
+	box-shadow:3px 3px 1px -1px #333;
+	color:#000;
+}
+	.btn:hover {
+		background:#aaa;
+		box-shadow:1px 1px 1px -1px #333;
+		color:#fff;
+	}
+
+ul.login,
+ul.account {
+	float:right;
+	margin:0;
+	padding:0;
+}
+	ul.login li,
+	ul.account li {
+		display:inline-block;
+	}
+		ul.login a {
+			display:block;
+			margin-left:1rem;
+			width:5.5rem;
+			padding:1rem;
+			text-align:center;
+			text-decoration:none;
+		}
+	ul.account li {
+		font-size:1rem;
+		margin-left:.5rem;
+		line-height:54px;
+	}
+		ul.account a {
+			background:#aaa;
+			border:1px solid #555;
+			border-radius:30px;
+			color:#fff;
+			padding:.5rem;
+			text-decoration:none;
+		}
+		ul.account a:hover {
+			background:#fff;
+			color:#000;
+		}
+
+.clearfix:before,
+.clearfix:after {
+	content:" ";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+
+nav.month {
+	text-align:center;
+}
+	nav.month h1 {
+		font-size:2rem;
+		margin:.5rem 0;
+	}
+	nav.month h2 {
+		font-size:1.5rem;
+		margin:.5rem 0;
+	}
+	nav.month ul {
+		margin:0;
+		padding:0;
+	}
+	nav.month ul li {
+		font-size:1.2rem;
+		display:inline-block;
+		margin:.5rem .5rem;
+	}
+	nav.month ul li a {
+		display:block;
+		padding:.5rem;
+		text-decoration:none;
+		width:2.5rem;
+	}
+
+nav.container {
+	overflow:auto;
+	margin:0 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+
+}
+td,
+th {
+	vertical-align:baseline;
+}
+table.calendar {
+	background:#eee;
+	border:2px solid #000;
+	table-layout:fixed;
+}
+	table.calendar thead {
+		border-bottom:2px solid #000;
+		text-align:center;
+	}	
+		table.calendar th {
+			font-size:1rem;
+			padding:.5rem;
+		}
+	table.calendar tbody td {
+		border:1px solid #000;
+		width:14%;
+		min-width:6.5rem;
+	}
+	table.calendar tbody ul {
+		margin:0;
+		padding:0;
+	}
+		table.calendar tbody li {
+			list-style:none;
+			margin:1rem auto;
+			width:90%;
+		}
+			table.calendar tbody a {
+				background:#fff;
+				border:1px solid #000;
+				box-shadow:3px 3px 1px -1px #333;
+				color:#000;
+				display:block;
+				padding:.5rem;
+				text-decoration:none;
+			}
+				table.calendar tbody a:hover {
+					background:#aaa;
+					box-shadow:1px 1px 1px -1px #333;
+					color:#fff;
+				}
+			table.calendar td.past,
+			table.calendar td.past a {
+				background:#eee;
+				box-shadow:none;
+				color:#aaa;
+				pointer-events:none;
+			}
+	table.calendar h3 {
+		margin:.5rem 0;
+		text-align:center;
+	}
+	table.calendar h4 {
+		font-weight:800;
+		margin:.3rem 0;
+		padding:0;
+		white-space:nowrap;
+	}
+	table.calendar p {
+		margin:.3rem 0;
+		padding:0;
+		font-size:.8rem;
+	}
+
+/* Overlay when Modal is open */
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+/* Modal box */
+.modal-login,
+.modal-volunteerconf,
+.modal-confirmreg {
+	position:absolute;
+	width:330px;
+	height:auto;
+	left:45%;
+	top:80px;
+	background:#fff;
+	text-align:center;
+	border:2px solid #000;
+	padding:1rem;
+}
+	.modal-login header,
+	.modal-volunteerconf header {
+		background:#eee;
+	}
+		.modal-login h1,
+		.modal-volunteerconf h1 {
+			display:inline-block;
+			float:left;
+			margin:0;
+			padding:0;
+			font-size:1.3rem;
+		}
+		.modal-login i,
+		.modal-volunteerconf i {
+			border:2px solid #000;
+			box-shadow:3px 3px 1px -1px #333;
+			float:right;
+			padding:.3rem;
+		}
+			.modal-login i:hover,
+			.modal-volunteerconf i:hover {
+				background:#aaa;
+				box-shadow:1px 1px 1px -1px #333;
+				color:#fff;
+			}
+	.modal-login fieldset,
+	.modal-volunteerconf fieldset {
+		border:none;
+	}
+		.modal-volunteerconf fieldset {
+			text-align:left;
+			margin:0 auto;
+			width:15rem;
+		}
+	.modal-login form label,
+	.modal-volunteerconf form label {
+		display:block;
+		margin:.5rem auto;
+	}
+		.modal-login form input {
+			width:75%;
+		}
+		.modal-login form a,
+		.modal-volunteerconf form a,
+		.modal-confirmreg a {
+			display:block;
+			width:3.5rem;
+			margin:.5rem auto;
+			padding:.5rem;
+		}
+			.modal-volunteerconf form a {
+				width:15rem;
+			}
+			.modal-volunteerconf form a.inactive {
+				background:#eee;
+				box-shadow:none;
+				color:#aaa;
+				pointer-events:none;
+				border:1px solid #000;
+			}
+	.modal-login p {
+		margin:.3rem auto;
+		padding:0;
+		font-size:.7rem;
+	}
+
+section.eventdetails {
+	margin:1rem;
+	position:relative;
+}
+	section.eventdetails h1 {
+		display:inline;
+		margin:1rem 0;
+	}
+	section.eventdetails h2::after {
+		content:":";
+	}
+	section.eventdetails figure {
+		display:inline;
+		float:right;
+		margin:0 0 0 1rem;
+		padding:0;
+	}
+		section.eventdetails img {
+			max-width:100%;
+			border:2px solid #000;
+		}
+	section.eventdetails a {
+		position:absolute;
+		right:0;
+		bottom:0;
+		padding:1rem;
+	}
