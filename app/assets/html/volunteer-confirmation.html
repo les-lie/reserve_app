@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>Volunteer Application</title>
-  
+  <title>Volunteer Application</title>
+
   <!--STYLES-->
-	<link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
-	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+
+  <!--FONTS-->
+  <link rel="stylesheet" href="../type/font-awesome-4.2.0/css/font-awesome.min.css">
   
   <!--SCRIPTS-->
   <script type="text/javascript" src="../javascripts/jquery-1.11.1.js"></script>
@@ -17,51 +20,72 @@
 <body>
 
 <header class="clearfix">
-  <img class="logo" src="http://placekitten.com/g/50/50">
-  <ul class="account">
-    <li>Welcome, Leslie</li>
-    <li><a href="calendar-loggedoff.html">Sign Out</a></li>
+  <img class="logo" src="http://placekitten.com/80/50">
+  <ul class="account right">
+    <li>Welcome, Aimee</li>
+    <li><a class="button__basic--bright" href="calendar-loggedoff.html">Sign Out</a></li>
   </ul>
 </header>
 
-<section class="eventdetails">
-  <h1>Food Delivery</h1>
-  <figure>
-    <img src="http://placekitten.com/g/500/500">
-  </figure>
-  <h2>Contact Person</h2>
-  <p>Aimee Franco</p>
-  <h2>Event Description</h2>
-  <p>Volunteers will pick up packages of food from the food bank depository and deliver it to various locations around the city. Locations include soup kitchens, shelters, etc.</p>
-  <h2>Event Requirements</h2>
+<div class="event-details__container clearfix">
+  <aside class="event-details">
   <ul>
-    <li>Must be over 18 years old</li>
-    <li>Must have a valid driver's license</li>
-    <li>Must have your own vehicle</li>
-    <li>Must be able to lift at least 15 lbs comfortably</li>
+    <li><a href="calendar-loggedon.html"><i class="fa fa-calendar"></i>Calendar</a></li>
+    <li><a href="profile.html"><i class="fa fa-user"></i></i>Profile</a></li>
   </ul>
-  <h2>Location</h2>
-  <p>1600 S. Wacker Drive<br>
-  Chicago, IL 60655</p>
-  <h2>Time</h2>
-  <p>10:00AM - 12:00PM</p>
-  <h2>Number of Volunteers Needed</h2>
-  <p>5</p>
+  </aside>
 
-  <a id="modal_trigger" class="btn" href="#modal">Confirm Registration</a>
-  
-</section>
+  <section class="event-details">
+  <i class="fa fa-bars fa-3x"></i>
+  <figure class="event-details">
+    <img src="http://www.placekitten.com/g/500/500">
+    <figcaption>
+    Volunteers will pick up packages of food from the food bank depository and will deliver it to various locations around the city. Locations include soup kitchens, shelters, etc.</figcaption>
+    <a class="button__basic" href="modal_trigger">Confirm Registration</a>
+  </figure>
+  <h1>Walk Dogs at Grant Park</h1>
+  <h2>November 3, 2014</h2>
+  <h2>2:00 PM - 3:00 PM</h2>
 
-<!-- Confirm Registration Modal Begin -->
+  <h3>Event Description</h3>
+  <p>Volunteers will pick up packages of food from the food bank depository and will deliver it to various locations around the city. Locations include soup kitchens, shelters, etc.</p>
+
+  <h3>Event Requirements</h3>
+  <ul>
+    <li><i class="fa fa-exclamation-circle"></i>Must be over 18 years old</li>
+    <li><i class="fa fa-exclamation-circle"></i>Must have a valid driver's license</li>
+    <li><i class="fa fa-exclamation-circle"></i>Must have your own vehicle</li>
+    <li><i class="fa fa-exclamation-circle"></i>Must be able to lift at least 15 lbs</li>
+  </ul>
+
+  <h3>Location</h3>
+  <p>1600 S. Wacker Drive, Chicago, IL 60655</p>
+
+  <h3>Number of Volunteers Needed</h3>
+  <p>12 Total</p>
+  <p>5 Spots Available</p>
+  </section>
+
+
+</div><!--End Container-->
+
+<!-- Login Modal Begin -->
 <script>
-  $("#modal_trigger").leanModal({top : 200, overlay : .6, closeButton: ".modal_close" });
+  $("#modal_trigger").leanModal({ top : 200, overlay : .5, closeButton: ".modal_close" });
 </script>
 
-<div id="modal" class="modal-confirmreg" style="display:none;">
-  <p>Thank you for signing up to volunteer!</p>
-  <a class="btn" href="calendar-loggedon.html">Home</a>
+<div id="modal" class="modal-login" style="display:none;">
+  <a class="modal_close"><i class="fa fa-times"></i></a>
+  <h2>Log in to your account</h2>
+
+  <form>
+      <label> Username <input type="text"></label>
+      <label> Password <input type="password"></label>
+    <button class="button__basic" href="calendar-loggoedon.html">Login</button>
+    <a class="button__callout" href="signup.html">Not a member?<span>Sign Up</span></a>
+  </form>
 </div>
-<!-- Confirm Registration Modal End -->
+<!-- Login Modal End -->
 
 </body>
 
