@@ -54,7 +54,9 @@ header {
 		}
 /* End Header */
 
-.button--block {
+
+/* Buttons */
+.button__callout {
 	background:#EB738A;
 	box-shadow:1px 1px 1px 1px rgba(0,0,0,.3);
 	color:#fff;
@@ -62,8 +64,27 @@ header {
 	line-height:3rem;
 	text-align:center;
 	padding:0 1.5rem;
+	user-select:none;
 }
 
+.button__basic {
+	background:#fff;
+	border:none;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,.3);
+	color:#69C4A6;
+	user-select:none;
+}
+
+.button__basic--bright {
+	background:#fff;
+	border:2px solid #EB738A;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,.3);
+	color:#EB738A;
+	display:block;
+	line-height:3rem;
+	padding:0 1.5rem;
+	user-select:none;
+}
 
 nav.month {
 	background:#69C4A6;
@@ -148,6 +169,9 @@ ul.calendar {
 	overflow:hidden;
 	padding:.3rem;
 }
+	.calendar__events__item:hover {
+		box-shadow:3px 3px 3px -3px rgba(0,0,0,.1);
+	}
 .calendar__events__item__time {
 	font-weight:800;
 	font-size:1rem;
@@ -256,81 +280,85 @@ table.calendar {
 .modal-login,
 .modal-volunteerconf,
 .modal-confirmreg {
-	position:absolute;
-	width:330px;
+	background:#bbb;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,.1);
 	height:auto;
 	left:45%;
-	top:80px;
-	background:#fff;
-	text-align:center;
-	border:2px solid #000;
 	padding:1rem;
+	position:absolute;
+	text-align:center;
+	top:12.5rem;
+	width:23rem;	
 }
-	.modal-login header,
-	.modal-volunteerconf header {
-		background:#eee;
-	}
-		.modal-login h1,
-		.modal-volunteerconf h1 {
-			display:inline-block;
-			float:left;
-			margin:0;
-			padding:0;
-			font-size:1.3rem;
-		}
-		.modal-login i,
-		.modal-volunteerconf i {
-			border:2px solid #000;
-			box-shadow:3px 3px 1px -1px #333;
-			float:right;
-			padding:.3rem;
-		}
-			.modal-login i:hover,
-			.modal-volunteerconf i:hover {
-				background:#aaa;
-				box-shadow:1px 1px 1px -1px #333;
-				color:#fff;
+	.modal-login i,
+			.modal-volunteerconf i {
+				background:#fff;
+				box-shadow:1px 1px 1px 1px rgba(0,0,0,.1);
+				color:#69C4A6;
+				float:right;
+				padding:.3rem;
 			}
-	.modal-login fieldset,
-	.modal-volunteerconf fieldset {
-		border:none;
-	}
-		.modal-volunteerconf fieldset {
-			text-align:left;
-			margin:0 auto;
-			width:15rem;
-		}
-	.modal-login form label,
-	.modal-volunteerconf form label {
-		display:block;
-		margin:.5rem auto;
-	}
-		.modal-login form input {
-			width:75%;
-		}
-		.modal-login form a,
-		.modal-volunteerconf form a,
-		.modal-confirmreg a {
+				.modal-login i:hover,
+				.modal-volunteerconf i:hover {
+					box-shadow:3px 3px 3px -3px rgba(0,0,0,.1);
+				}
+	.modal-login h2,
+		.modal-volunteerconf h2 {
+			color:#333;
+			clear:both;
 			display:block;
-			width:3.5rem;
-			margin:.5rem auto;
-			padding:.5rem;
+			margin:0;
+			padding:1.5rem;
+			font-size:1.125rem;
+			font-weight:200;
+			text-align:center;
 		}
-			.modal-volunteerconf form a {
-				width:15rem;
-			}
-			.modal-volunteerconf form a.inactive {
-				background:#eee;
-				box-shadow:none;
-				color:#aaa;
-				pointer-events:none;
-				border:1px solid #000;
-			}
-	.modal-login p {
-		margin:.3rem auto;
-		padding:0;
-		font-size:.7rem;
+	.modal-login form {
+		margin:0;
+		padding:0 2.5rem 2.5rem 2.5rem;
 	}
+		.modal-login form label,
+		.modal-volunteerconf form label {
+			display:block;
+			text-align:left;
+			margin-bottom:1rem;
+		}
+			.modal-login form input {
+				background:#eee;
+				height:2rem;
+				margin:0;
+				padding:0;
+				width:100%;
+			}
+		.modal-login .button__basic {
+			display:inline-block;	
+			height:3.2rem;
+			font-size:1rem;
+			line-height:1rem;
+			margin:.8rem 1.5rem 0 0;
+			padding:1rem;
+			width:6.9rem;
+			}
+			.modal-login .button__callout {
+				display:inline-block;
+				font-size:.7rem;
+				height:3.2rem;
+				line-height:1rem;
+				margin:.8rem 0 0 0;
+				padding:.5rem;
+				width:6.9rem;
+				vertical-align: top;
+			}
+				.modal-login .button__callout span {
+					display:block;
+					font-size:1rem;
+					margin:0;
+					padding:0;
+				}
+			.modal-login .button__basic:hover,
+			.modal-login .button__callout:hover {
+				box-shadow:1px 1px 1px 1px rgba(0,0,0,.1);
+			}
 
 section.eventdetails {
 	margin:1rem;
@@ -363,4 +391,9 @@ section.eventdetails {
 	@media (max-width:36.5rem) {
 		table.calendar {display:none;}
 		.calendar__container {display:block;}
+		.calendar__events__item {margin:0 1.5rem .5rem 1.5rem;}
+		.calendar__day__date {padding:.5rem 2rem;}
+		.modal-login {
+			width:100%;
+		}
 	}

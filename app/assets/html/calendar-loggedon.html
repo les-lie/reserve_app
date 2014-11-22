@@ -5,41 +5,503 @@
 	<title>Volunteer Application</title>
 
   <!--STYLES-->
-	<link rel="stylesheet" type="text/css" href="../styesheets/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+
+  <!--FONTS-->
+  <link rel="stylesheet" href="../type/font-awesome-4.2.0/css/font-awesome.min.css">
   
+  <!--SCRIPTS-->
+  <script type="text/javascript" src="../javascripts/jquery-1.11.1.js"></script>
+  <script type="text/javascript" src="../javascripts/jquery.leanModal.min.js"></script>
+
 </head>
 
 <body>
 
 <header class="clearfix">
-	<img class="logo" src="http://placekitten.com/g/50/50">
-	<ul class="account">
-		<li>Welcome, Leslie</li>
-		<li><a href="calendar-loggedoff.html">Sign Out</a></li>
-	</ul>
+	<img class="logo" src="http://placekitten.com/80/50">
+	<ul class="account right">
+    <li>Welcome, Aimee</li>
+    <li><a class="button__basic--bright" href="calendar-loggedoff.html">Sign Out</a></li>
+  </ul>
 </header>
 
+
 <nav class="month">
-<h1>Volunteer Calendar</h1>
-<h2>2014</h2>
 <ul>
-  <li><a class="btn" href="#" alt="Back"><</a></li>
-  <li>November</li>
-  <li><a class="btn" href="#" alt="Next">></a></li>
+  <li><a class="month__button" href="#" alt="Back"><</a></li>
+  <li><h2 class="month__title">November 2014</h2></li>
+  <li><a class="month__button" href="#" alt="Next">></a></li>
 </ul>
 </nav>
+
+<div class="calendar__container clearfix">
+<ul class="calendar clearfix">
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Thu</h3>
+    <h4 class="calendar__day__date">02</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Thursday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Fri</h3>
+    <h4 class="calendar__day__date">03</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Friday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Sat</h3>
+    <h4 class="calendar__day__date">04</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+    </ul>
+  </li><!--End Saturday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Sun</h3>
+    <h4 class="calendar__day__date">05</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Sunday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Mon</h3>
+    <h4 class="calendar__day__date">06</h4>
+  </li><!--End Monday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Tue</h3>
+    <h4 class="calendar__day__date">07</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">8:00 AM</h4>
+      <h5 class="calendar__events__item__title">Walk Dogs at Grant Park</h5>
+      </li>
+
+    </ul>
+  </li><!--End Tuesday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Wed</h3>
+    <h4 class="calendar__day__date">08</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">2:00 AM</h4>
+      <h5 class="calendar__events__item__title">Food Delivery</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">5:30 PM</h4>
+      <h5 class="calendar__events__item__title">Dinner</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">5:30 PM</h4>
+      <h5 class="calendar__events__item__title">Dinner</h5>
+      </li>
+
+    </ul>
+  </li><!--End Wednesday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Thu</h3>
+    <h4 class="calendar__day__date">09</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Thursday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Fri</h3>
+    <h4 class="calendar__day__date">10</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Friday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Sat</h3>
+    <h4 class="calendar__day__date">11</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+    </ul>
+  </li><!--End Saturday-->
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Sun</h3>
+    <h4 class="calendar__day__date">12</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon Are Super Delicious!</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Sunday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Mon</h3>
+    <h4 class="calendar__day__date">13</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">11:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">2:00 PM</h4>
+      <h5 class="calendar__events__item__title">Senior Delight</h5>
+      </li>
+
+    </ul>
+  </li><!--End Monday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Tue</h3>
+    <h4 class="calendar__day__date">14</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">8:00 AM</h4>
+      <h5 class="calendar__events__item__title">Walk Dogs at Grant Park</h5>
+      </li>
+
+    </ul>
+  </li><!--End Tuesday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Wed</h3>
+    <h4 class="calendar__day__date">15</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">2:00 AM</h4>
+      <h5 class="calendar__events__item__title">Food Delivery</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">5:30 PM</h4>
+      <h5 class="calendar__events__item__title">Dinner</h5>
+      </li>
+
+    </ul>
+  </li><!--End Wednesday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Thu</h3>
+    <h4 class="calendar__day__date">16</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Thursday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Fri</h3>
+    <h4 class="calendar__day__date">17</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Friday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Sat</h3>
+    <h4 class="calendar__day__date">18</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+    </ul>
+  </li><!--End Saturday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Sun</h3>
+    <h4 class="calendar__day__date">19</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Sunday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Mon</h3>
+    <h4 class="calendar__day__date">20</h4>
+  </li><!--End Monday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Tue</h3>
+    <h4 class="calendar__day__date">21</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">8:00 AM</h4>
+      <h5 class="calendar__events__item__title">Walk Dogs at Grant Park</h5>
+      </li>
+
+    </ul>
+  </li><!--End Tuesday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Wed</h3>
+    <h4 class="calendar__day__date">22</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">2:00 AM</h4>
+      <h5 class="calendar__events__item__title">Food Delivery</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">5:30 PM</h4>
+      <h5 class="calendar__events__item__title">Dinner</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">5:30 PM</h4>
+      <h5 class="calendar__events__item__title">Dinner</h5>
+      </li>
+
+    </ul>
+  </li><!--End Wednesday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Thu</h3>
+    <h4 class="calendar__day__date">23</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">You're My Favorite Musical</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Thursday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Fri</h3>
+    <h4 class="calendar__day__date">24</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">4:00 PM</h4>
+      <h5 class="calendar__events__item__title">Tea Time</h5>
+      </li>
+
+    </ul>
+  </li><!--End Friday-->
+
+  <li class="calendar__day">
+    <h3 class="calendar__day__day">Sat</h3>
+    <h4 class="calendar__day__date">25</h4>
+    <ul class="calendar__events">
+
+      <li class="calendar__events__item">
+      <h4 class="calendar__events__item__time">10:00 AM</h4>
+      <h5 class="calendar__events__item__title">Peaces of Bacon</h5>
+      </li>
+
+    </ul>
+  </li><!--End Saturday-->
+</ul><!--End Calendar-->
+</div><!--End Container-->
+
 
 <table class="calendar">
 <thead>
 <tr>
-  <th>Sunday</th>
-  <th>Monday</th>
-  <th>Tuesday</th>
-  <th>Wednesday</th>
-  <th>Thursday</th>
-  <th>Friday</th>
-  <th>Saturday</th>
+  <th>Sun</th>
+  <th>Mon</th>
+  <th>Tue</th>
+  <th>Wed</th>
+  <th>Thu</th>
+  <th>Fri</th>
+  <th>Sat</th>
 </tr>
 </thead>
 <tbody>
@@ -48,19 +510,19 @@
   	<h3>27</h3>
   	<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Food Delivery</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>5:00 PM</h4>
   			<p>Senior Citizens Night</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>6:00 PM</h4>
   			<p>Serve Dinner</p>
   			</a>
@@ -71,13 +533,13 @@
   	<h3>28</h3>
   	<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Food Delivery</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>5:00 PM</h4>
   			<p>Senior Night</p>
   			</a>
@@ -88,13 +550,13 @@
   	<h3>29</h3>
   	<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Food Delivery</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>5:00 PM</h4>
   			<p>Senior Night</p>
   			</a>
@@ -108,19 +570,19 @@
   	<h3>31</h3>
   	<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Good Dog Walk Park</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>5:00 PM</h4>
   			<p>Senior Night</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>6:00 PM</h4>
   			<p>Serve or Be Served</p>
   			</a>
@@ -131,7 +593,7 @@
   	<h3>01</h3>
   	<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Food Delivery</p>
   			</a>
@@ -142,19 +604,19 @@
   	<h3>02</h3>
   	<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Peaces of Bacon</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>5:00 PM</h4>
   			<p>Senior Delight</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>6:00 PM</h4>
   			<p>Be Dinner</p>
   			</a>
@@ -170,19 +632,19 @@
 		<h3>04</h3>
 		<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Clothing Delivery</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>5:00 PM</h4>
   			<p>Saturday Night Live Screening</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>6:00 PM</h4>
   			<p>Serve Dinner</p>
   			</a>
@@ -193,7 +655,7 @@
 		<h3>05</h3>
 		<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Food Drive</p>
   			</a>
@@ -204,7 +666,7 @@
 		<h3>06</h3>
 		<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Food Delivery</p>
   			</a>
@@ -218,19 +680,19 @@
 		<h3>08</h3>
 		<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Food Delivery</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>5:00 PM</h4>
   			<p>Senior Bacon Night</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>6:00 PM</h4>
   			<p>Serve Delicious Dinner</p>
   			</a>
@@ -241,13 +703,13 @@
 		<h3>09</h3>
 		<ul>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>10:00 AM</h4>
   			<p>Rushed Food Delivery</p>
   			</a>
   		</li>
   		<li>
-  			<a href="eventdetails-loggedin.html">
+  			<a href="eventdetails-loggedout.html">
   			<h4>5:00 PM</h4>
   			<p>Senior Bingo Night</p>
   			</a>
@@ -263,19 +725,19 @@
     <h3>11</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Clothing Delivery</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>5:00 PM</h4>
         <p>Saturday Night Live Screening</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>6:00 PM</h4>
         <p>Serve Dinner</p>
         </a>
@@ -286,7 +748,7 @@
     <h3>12</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Food Drive</p>
         </a>
@@ -297,7 +759,7 @@
     <h3>13</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Food Delivery</p>
         </a>
@@ -311,19 +773,19 @@
     <h3>15</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Food Delivery</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>5:00 PM</h4>
         <p>Senior Bacon Night</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>6:00 PM</h4>
         <p>Serve Delicious Dinner</p>
         </a>
@@ -334,13 +796,13 @@
     <h3>16</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Rushed Food Delivery</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>5:00 PM</h4>
         <p>Senior Bingo Night</p>
         </a>
@@ -356,19 +818,19 @@
     <h3>18</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Clothing Delivery</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>5:00 PM</h4>
         <p>Saturday Night Live Screening</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>6:00 PM</h4>
         <p>Serve Dinner</p>
         </a>
@@ -379,7 +841,7 @@
     <h3>19</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Food Drive</p>
         </a>
@@ -390,7 +852,7 @@
     <h3>20</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Food Delivery</p>
         </a>
@@ -404,19 +866,19 @@
     <h3>22</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Food Delivery</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>5:00 PM</h4>
         <p>Senior Bacon Night</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>6:00 PM</h4>
         <p>Serve Delicious Dinner</p>
         </a>
@@ -427,13 +889,13 @@
     <h3>23</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Rushed Food Delivery</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>5:00 PM</h4>
         <p>Senior Bingo Night</p>
         </a>
@@ -449,19 +911,19 @@
     <h3>25</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Clothing Delivery</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>5:00 PM</h4>
         <p>Saturday Night Live Screening</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>6:00 PM</h4>
         <p>Serve Dinner</p>
         </a>
@@ -472,7 +934,7 @@
     <h3>26</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Food Drive</p>
         </a>
@@ -483,7 +945,7 @@
     <h3>27</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Food Delivery</p>
         </a>
@@ -497,19 +959,19 @@
     <h3>29</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Food Delivery</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>5:00 PM</h4>
         <p>Senior Bacon Night</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>6:00 PM</h4>
         <p>Serve Delicious Dinner</p>
         </a>
@@ -520,13 +982,13 @@
     <h3>30</h3>
     <ul>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>10:00 AM</h4>
         <p>Rushed Food Delivery</p>
         </a>
       </li>
       <li>
-        <a href="eventdetails-loggedin.html">
+        <a href="eventdetails-loggedout.html">
         <h4>5:00 PM</h4>
         <p>Senior Bingo Night</p>
         </a>
@@ -536,6 +998,25 @@
 </tr>
 </tbody>
 </table>
+
+<!-- Login Modal Begin -->
+<script>
+  $("#modal_trigger").leanModal({ top : 200, overlay : .5, closeButton: ".modal_close" });
+</script>
+
+<div id="modal" class="modal-login" style="display:none;">
+  <a class="modal_close"><i class="fa fa-times"></i></a>
+  <h2>Log in to your account</h2>
+
+  <form>
+      <label> Username <input type="text"></label>
+      <label> Password <input type="password"></label>
+    <button class="button__basic" href="calendar-loggoedon.html">Login</button>
+    <a class="button__callout" href="signup.html">Not a member?<span>Sign Up</span></a>
+  </form>
+
+</div>
+<!-- Login Modal End -->
 
 </body>
 
